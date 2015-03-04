@@ -10,10 +10,15 @@
 	<stdlib.h>
 	"md5.h"
 
-1425492895 source:c:\users\mturner\desktop\md5\md5\main.c
+1425504215 source:c:\users\mturner\desktop\md5\md5\main.c
 	<stdio.h>
 	<stdlib.h>
 	"md5.h"
+	<errno.h>
 
 1425492762 c:\users\mturner\desktop\md5\md5\md5.h
+
+1425492912 source:c:\users\mturner\desktop\md5\md5\md5.c
+	"md5.h"
+	<string.h>
 
