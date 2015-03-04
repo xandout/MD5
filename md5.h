@@ -85,8 +85,10 @@ void md5_init(md5_state_t *pms);
 void md5_append(md5_state_t *pms, const md5_byte_t *data, int nbytes);
 
 /* Finish the message and return the digest. */
-//mturner - Mar 04 2015 - Added 'string' representation of digest. Accepts NULL
-void md5_finish(md5_state_t *pms, md5_byte_t digest[16], char hexstring[33]);
+void md5_finish(md5_state_t *pms, md5_byte_t digest[16]);
+
+/*Convert digest to hex string */
+void md5_string(md5_byte_t digest[16], char hexstring[33]);
 
 #ifdef __cplusplus
 }  /* end extern "C" */

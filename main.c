@@ -18,7 +18,8 @@ int main(int argc, char* argv[])
         char hex_output[16*2 + 1];
         md5_init(&state);
         md5_append(&state, (md5_byte_t *)argv[1], strlen(argv[1]));
-        md5_finish(&state, digest, md5string);
+        md5_finish(&state, digest);
+        md5_string(digest, md5string);
         puts(md5string);
 
 

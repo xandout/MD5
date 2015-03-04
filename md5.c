@@ -364,7 +364,7 @@ md5_append(md5_state_t *pms, const md5_byte_t *data, int nbytes)
 }
 
 void
-md5_finish(md5_state_t *pms, md5_byte_t digest[16], char hexstring[33])
+md5_finish(md5_state_t *pms, md5_byte_t digest[16])
 {
     static const md5_byte_t pad[64] =
     {
@@ -386,11 +386,17 @@ md5_finish(md5_state_t *pms, md5_byte_t digest[16], char hexstring[33])
     for (i = 0; i < 16; ++i)
         digest[i] = (md5_byte_t)(pms->abcd[i >> 2] >> ((i & 3) << 3));
 
-    //mturner - Mar 04 2015 - Added 'string' representation of digest. Accepts NULL
-    if(hexstring != NULL)
+
+}
+
+void md5_string(md5_byte_t digest[16], char hexstring[33])
+{
+
+    //mturner - Mar 04 2015 - Added 'string' representation of digest.
+    int i;
+    if(hexstring)
     {
         for(i = 0; i < 16; ++i)
             sprintf(&hexstring[i*2], "%02x", (unsigned int)digest[i]);
     }
-
 }
