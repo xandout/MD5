@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1425489465 source:c:\users\mturner\desktop\md5\md5.c
+	"md5.h"
+	<string.h>
+
+1425489476 c:\users\mturner\desktop\md5\md5.h
+
+1425490168 source:c:\users\mturner\desktop\md5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"md5.h"
+
