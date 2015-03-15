@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
     //parseFile("MCPR.exe");
     if(argc < 2)
     {
-        printf("\nUsage: %s <string to hash>", argv[0]);
+        printf("\nUsage: %s <string to hash>\n", argv[0]);
         return 0;
     }
     else if(!strcmp(argv[1], "-file"))

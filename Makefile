@@ -1,5 +1,5 @@
 all:
-	gcc *.c
+	gcc *.c -o xanmd5
 
 commit:
 	git commit -a
