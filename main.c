@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
         md5_string(digest, md5string);
         puts(md5string);
 
-
+        // Test from Zed
         return 0;
 
     }
